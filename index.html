@@ -261,12 +261,13 @@
         .nav-reserve-btn {
             background: var(--accent-gold);
             color: var(--white);
-            padding: 0.8rem 1.8rem;
+            padding: 6.8px 28.8px 5.8px 0.8px;
             font-size: 11px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.15em;
             border-radius: 2px;
+            white-space: nowrap;
         }
 
         /* Mobile Menu */
@@ -687,8 +688,7 @@
                 <li><a href="#menu" class="nav-link">Menu</a></li>
                 <li><a href="#events" class="nav-link">Private Events</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="#reserve" class="nav-reserve-btn">Reserve a Table</a></li>
+                <li><a href="#contact" class="nav-reserve-btn">Contact Us</a></li>
             </ul>
             <div class="hamburger" id="nav-toggle">
                 <span></span>
@@ -705,8 +705,7 @@
         <a href="#menu" class="mobile-link">Executive Menu</a>
         <a href="#events" class="mobile-link">Weddings & Events</a>
         <a href="#gallery" class="mobile-link">Estate Gallery</a>
-        <a href="#contact" class="mobile-link">Contact & Location</a>
-        <a href="#reserve" class="btn-gold" style="margin-top: 2rem;">Reserve Now</a>
+        <a href="#contact" class="btn-gold" style="margin-top: 2rem;">Contact Us</a>
     </div>
 
     <main>
@@ -722,7 +721,7 @@
                 <h1 class="fade-up italic-serif">Where the <span>Estate</span> Comes Alive</h1>
                 <p class="fade-up" style="transition-delay: 0.2s;">Fine dining and private celebrations in the heart of Benoni's premier Golf Estate.</p>
                 <div class="hero-btns fade-up" style="transition-delay: 0.4s;">
-                    <a href="#reserve" class="btn btn-gold">Reserve a Table</a>
+                    <a href="#contact" class="btn btn-gold">Contact Us</a>
                     <a href="#menu" class="btn btn-ghost">View Menu</a>
                 </div>
             </div>
@@ -931,88 +930,6 @@
             </div>
         </section>
 
-        <!-- Reservations -->
-        <section id="reserve" class="container">
-            <div class="text-center mb-4 fade-up">
-                <h2 style="font-size: 2.5rem; color: var(--primary-green);">Reserve Your Table</h2>
-                <p class="gold">Booking is easy — and always worth it.</p>
-            </div>
-
-            <div class="reservation-box fade-up">
-                <form id="reservation-form" class="res-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" required placeholder="+27 00 000 0000">
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Time</label>
-                        <select id="time" required>
-                            <option value="">Select a time</option>
-                            <option>12:00</option>
-                            <option>12:30</option>
-                            <option>13:00</option>
-                            <option>13:30</option>
-                            <option>14:00</option>
-                            <option>18:00</option>
-                            <option>18:30</option>
-                            <option>19:00</option>
-                            <option>19:30</option>
-                            <option>20:00</option>
-                            <option>20:30</option>
-                            <option>21:00</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Number of Guests</label>
-                        <select id="guests" required>
-                            <option value="">Select guests</option>
-                            <option>1 Guest</option>
-                            <option>2 Guests</option>
-                            <option>3 Guests</option>
-                            <option>4 Guests</option>
-                            <option>5 Guests</option>
-                            <option>6-10 Guests</option>
-                            <option>10-20 Guests</option>
-                            <option>20+ (Contact us)</option>
-                        </select>
-                    </div>
-                    <div class="form-group full">
-                        <label for="occasion">What's the occasion?</label>
-                        <select id="occasion">
-                            <option>Just Dining</option>
-                            <option>Birthday</option>
-                            <option>Anniversary</option>
-                            <option>Business Dinner</option>
-                            <option>Romantic Dinner</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group full">
-                        <label for="requests">Special Requests</label>
-                        <textarea id="requests" rows="4" placeholder="Dietary requirements, preferred table, etc."></textarea>
-                    </div>
-                    <div class="form-group full">
-                        <button type="submit" class="btn btn-gold" style="width: 100%;">Confirm Reservation</button>
-                    </div>
-                </form>
-                <div id="success-msg" class="success-msg">
-                    Thank you! Your reservation request has been received. We'll confirm within 2 hours.
-                </div>
-            </div>
-        </section>
-
         <!-- Testimonials -->
         <section class="testimonials">
             <div class="container">
@@ -1097,7 +1014,7 @@
                         </div>
                         <div class="contact-detail">
                             <span class="gold">✉️</span>
-                            <span>reservations@ebotse.co.za</span>
+                            <span>info@ebotse.co.za</span>
                         </div>
                     </div>
 
@@ -1171,17 +1088,13 @@
     <!-- Floating Extras -->
     <a href="https://wa.me/27110000000" id="whatsapp-icon" target="_blank" title="Chat with us">WA</a>
     
-    <div id="floating-reserve">
-        <a href="#reserve" class="btn btn-gold" style="border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">Reserve a Table</a>
-    </div>
-
     <!-- Exit Modal -->
     <div id="exit-modal">
         <div class="modal-card">
             <span class="modal-close" onclick="closeModal()">&times;</span>
             <span class="gold serif" style="font-size: 1.2rem; display:block; margin-bottom: 1rem;">Limited Offer</span>
             <h2>Before you go...</h2>
-            <p>Join our newsletter today and get <strong>10% off</strong> your next reservation at Ebotse.</p>
+            <p>Join our newsletter today for seasonal menu updates and exclusive invites.</p>
             <form class="newsletter-form" style="max-width: 400px; margin: 0 auto;">
                 <input type="email" placeholder="Enter your email" required style="border: 1px solid #ddd;">
                 <button type="submit" class="newsletter-btn">Subscribe</button>
@@ -1206,15 +1119,12 @@
             let scrolled = (winScroll / height) * 100;
             document.getElementById("scroll-progress").style.width = scrolled + "%";
 
-            // Navbar change & Floating button
+            // Navbar change
             const nav = document.getElementById('navbar');
-            const floatingBtn = document.getElementById('floating-reserve');
             if (winScroll > 100) {
                 nav.classList.add('scrolled');
-                floatingBtn.style.display = 'block';
             } else {
                 nav.classList.remove('scrolled');
-                floatingBtn.style.display = 'none';
             }
 
             // Scroll Spying
@@ -1325,20 +1235,6 @@
         function closeModal() {
             document.getElementById('exit-modal').style.display = 'none';
         }
-
-        // --- FORM SUBMISSION ---
-        const resForm = document.getElementById('reservation-form');
-        resForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            resForm.style.display = 'none';
-            const msg = document.getElementById('success-msg');
-            msg.innerHTML = `Thank you, ${name}! Your reservation request has been received. We'll confirm within 2 hours.`;
-            msg.style.display = 'block';
-        });
-
-        // Set min date for reservation to today
-        document.getElementById('date').min = new Date().toISOString().split("T")[0];
     </script>
 </body>
 </html>
